@@ -1,12 +1,10 @@
-import java.util.*;
-import java.io.*;
 public class SequenceAlignment {
 
     public static String[] align(String s1, String s2, int match, int mismatch, int gap) {
         /*
         The next few lines just initiate the tables with the lengths of the strings as the length of the axis (+1).
         I wanted to remain consistent with the class examples, so I initiated this table with height+1 as the vertical height
-        and length +1 as the horizontal length. The bottom row represents string 2, the the left column represents string 1.
+        and length +1 as the horizontal length. The bottom row represents string 2, the left column represents string 1.
         The +1 is just there so that we can have [0][0] = 0 and [0][x] = x * gap and [x][0] = x * gap. This just fills
          out the sides of the table so that we can start making comparisons. I also make a second table to keep track of exactly
          where each cell came from. So later, I can refer to [i][j] in the second table to find where that score came from and
@@ -61,7 +59,7 @@ public class SequenceAlignment {
             }
         }
         /*
-        If we have not moved through either string entierly, we can check for diagonal
+        If we have not moved through either string entirely, we can check for diagonal
         in the current cell. If it is there, we append both characters in the cell and then move diagonally back down.
         If diagonal isn't there or one of the strings is empty, we can instead check for under. If It is there, then we
         just append the current character to the first string and a gap to the second and move down (since the first string
