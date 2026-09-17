@@ -22,7 +22,7 @@ public class Main {
             writeFile = new BufferedWriter(new FileWriter(outputFile));
         }catch(Exception e){
             System.out.println("problem initiating scanner or BufferedWriter");
-            System.out.println(e);
+            e.printStackTrace();
         }
         String string1 = scan.nextLine().trim();
 
