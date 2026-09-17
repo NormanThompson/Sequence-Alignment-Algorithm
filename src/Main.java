@@ -1,10 +1,3 @@
-/*
-Norman Thompson
-Dr. Cain
-CSCD 320
-5/5/2026
-Sequence alignment hw3
- */
 import java.util.*;
 import java.io.*;
 
