@@ -1,10 +1,3 @@
-/*
-Norman Thompson
-Dr. Cain
-CSCD 320
-5/5/2026
-Sequence alignment hw3
- */
 import java.util.*;
 import java.io.*;
 
@@ -29,7 +22,7 @@ public class Main {
             writeFile = new BufferedWriter(new FileWriter(outputFile));
         }catch(Exception e){
             System.out.println("problem initiating scanner or BufferedWriter");
-            System.out.println(e);
+            e.printStackTrace();
         }
         String string1 = scan.nextLine().trim();
 

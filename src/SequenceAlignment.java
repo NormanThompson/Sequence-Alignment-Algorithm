@@ -31,8 +31,7 @@ public class SequenceAlignment {
         it starts on the second to bottom row (as the bottom is already filled out), and chooses the optimal direction
         for where to come from to get to that square. Then it goes to the next row, etc... until the end. The way that
         the optimal score is calculated is pretty simple. Then, I just have a consistent precedence
-        for choosing which way to go, with diagonal being the most important, then left, then under. I don't know that this part
-        actually matters, but I wanted things to be consistent and predictable for this.
+        for choosing which way to go, with diagonal being the most important, then left, then under.
          */
         for (int i = 1; i <= height; i++) {
             for (int j = 1; j <= length; j++) {
